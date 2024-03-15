@@ -15,9 +15,9 @@ public class DefaultValues {
         char h;
         String i;
 
-        /*
-           Заборонено використання неініціалізованих локальних змінних
-           System.out.println(a);
-        */
+
+        // Заборонено використання неініціалізованих локальних змінних
+           System.out.println();
+
     }
 }

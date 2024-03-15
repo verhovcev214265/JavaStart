@@ -6,7 +6,7 @@ public class FloatAnDDouble {
     public static void main(String[] args) {
 
         float variable1 = 0.123_456_789_012_345_678_90f;
-        double variable2 = 0.123_456_789_012_345_67d;
+        double variable2 = 0.123_456_789_012_345_678_90d;
 
         System.out.println(variable1 + ITaskConstants.NEW_LINE + variable2);
     }
