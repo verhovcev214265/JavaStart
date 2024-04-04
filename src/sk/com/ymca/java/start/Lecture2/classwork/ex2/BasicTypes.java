@@ -7,7 +7,7 @@ public class BasicTypes {
 
         // ЦІЛОЧИСЕЛЬНІ:
 
-        // 8 - bits == 1 - byte, з діапазоном чисел від -128 до +127
+        // 8 - bits == 1 - byte, з діапазоном чисел від -128 до 127.
         byte a = -128;
         byte b = 127;
 
@@ -25,7 +25,6 @@ public class BasicTypes {
 
 
         // ДРОБОВІ:
-
         // 32 - bits == 4 - bytes
         /*
          Обов'язковово вказуємо суфікс F або f,
@@ -50,7 +49,8 @@ public class BasicTypes {
         // 16 - bits == 2 - bytes, символ у форматі UNICODE
         char p = '1';
         char q = 's';
-        char symbol = '\u0024';
+        char symbol = '\u2721';
+//        System.out.println(symbol);
 
 
         //                        !!!  НЕ ПРИМІТИВНИЙ ТИП  !!!

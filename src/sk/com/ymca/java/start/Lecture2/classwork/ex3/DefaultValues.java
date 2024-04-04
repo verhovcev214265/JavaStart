@@ -5,8 +5,8 @@ public class DefaultValues {
 
         // Дефолтні значення всіх типів змінних
 
-        byte a;
-        short b;
+        byte a = 1;
+        short b = 2;
         int c;
         long d;
         float e;
@@ -17,7 +17,7 @@ public class DefaultValues {
 
 
         // Заборонено використання неініціалізованих локальних змінних
-           System.out.println();
+           System.out.println(a + '\n' + b);
 
     }
 }

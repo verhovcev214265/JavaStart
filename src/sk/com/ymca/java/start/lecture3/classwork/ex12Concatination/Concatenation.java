@@ -8,12 +8,13 @@ public class Concatenation {
     public static void main(String[] args) {
 
         // Варіант_1
-        String word1 = "Hello ";
+        String word1 = "Hello";
         String word2 = "World!";
-        String phrase = word1 + word2;
+        final String SPACE = " ";
+        String phrase = word1 + SPACE + word2;
         System.out.println(phrase + ITaskConstants.NEW_LINE + ITaskConstants.DELIMITER);
 
         // Варіант_2
-        System.out.println("Hello " + "World!");
+        System.out.println("Hello" + " " + "World!");
     }
 }

@@ -14,8 +14,8 @@ public class StringFormat {
         System.out.println(String.format("This number is %1$s", a));
 
         /*
-        Метод printf() належить класу PrintStream, який відповідаєза вивід інформації і повертає рядок, відформатований
-        згідно заданих умов.
+        Метод printf() належить класу PrintStream, який відповідаєза вивід інформації
+        і повертає рядок, відформатований  згідно заданих умов.
          */
         System.out.printf("This number is %1$s \n", a);
         System.out.printf("This numbers are %1$s and %2$s \n", b, c);
@@ -38,10 +38,5 @@ public class StringFormat {
         System.out.println(ITaskConstants.NEW_LINE + ITaskConstants.DELIMITER);
 
         System.out.printf("\n%.3f", Math.PI);
-
-
-
-
-
     }
 }

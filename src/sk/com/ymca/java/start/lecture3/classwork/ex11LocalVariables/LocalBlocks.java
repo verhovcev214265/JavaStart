@@ -2,11 +2,14 @@ package sk.com.ymca.java.start.lecture3.classwork.ex11LocalVariables;
 
 import sk.com.ymca.java.start.lecture1.classwork.ITaskConstants;
 
-public class LocalVariables {
+public class LocalBlocks {
 
     public static void main(String[] args) {
 
-        // В коді можно створювати локальні області і в різних цих областях зберігати одноіменні змінні змінні
+        /*
+         В коді можно створювати локальні блоки
+         і в різних цих блоках зберігати  одноіменні змінні
+         */
 
         {
             int a = 1;

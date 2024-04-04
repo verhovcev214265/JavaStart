@@ -25,9 +25,9 @@ public class Input {
         System.out.println("Enter your string with spaces:");
         String inputWithSpaces = sc.nextLine();
 
-        System.out.println(inputInt + "\n" + inputFloat + "\n" + inputWithoutSpaces + "\n" + inputWithSpaces);
-
-
-
+        System.out.println(
+                inputInt + "\n" + inputFloat + "\n" + inputWithoutSpaces +
+                        "\n" + inputWithSpaces
+        );
     }
 }

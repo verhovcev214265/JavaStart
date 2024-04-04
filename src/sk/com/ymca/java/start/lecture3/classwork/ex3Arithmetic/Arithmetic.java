@@ -11,6 +11,7 @@ public class Arithmetic {
         byte num1 = 1, num2 = 2; // Множине оголошення
         int sum = num1 + num2;
         System.out.println(sum + ITaskConstants.NEW_LINE + ITaskConstants.DELIMITER);
+//        System.out.println(num1 + num2);
 
         // Subtraction
         byte minuend = 5, subtrahend = 3;
@@ -30,6 +31,8 @@ public class Arithmetic {
         // Remainder after division (%)
         int remainder = dividend % divisor;
         System.out.println(remainder + ITaskConstants.NEW_LINE + ITaskConstants.DELIMITER);
+
+        String name = "hgjfjgfjj";
 
     }
 }

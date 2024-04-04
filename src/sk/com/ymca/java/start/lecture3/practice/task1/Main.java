@@ -12,8 +12,12 @@ public class Main {
         int division = number1 / number2;
         int remainder = number1 % number2;
 
-        System.out.println("addition = " + addition + "\n" + "subtraction = " + subtraction + "\n" + "multiplication = " +
-               multiplication + "\n" + "division = " + division + "\n" + "remainder = " + remainder);
+        System.out.println(
+                "addition = " + addition + "\n" + "subtraction = " + subtraction +
+                        "\n" + "multiplication = " +
+                        multiplication + "\n" + "division = " + division + "\n" +
+                        "remainder = " + remainder
+        );
 
     }
 }
