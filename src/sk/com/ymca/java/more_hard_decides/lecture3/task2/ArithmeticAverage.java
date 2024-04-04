@@ -1,4 +1,4 @@
-package sk.com.ymca.java.me.lecture3.task2;
+package sk.com.ymca.java.more_hard_decides.lecture3.task2;
 
 /*
 Завдання 2

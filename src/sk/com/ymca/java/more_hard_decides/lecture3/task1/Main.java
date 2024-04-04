@@ -1,4 +1,4 @@
-package sk.com.ymca.java.me.lecture3.task1;
+package sk.com.ymca.java.more_hard_decides.lecture3.task1;
 
 /*
 Є 3 змінні типу int x = 10, y = 12 і z = 3;
