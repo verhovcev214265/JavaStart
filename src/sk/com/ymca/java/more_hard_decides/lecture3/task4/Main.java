@@ -13,31 +13,34 @@ S = 2πR2 + 2πR2 = 2πR(R+h)
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println(
-                "Choose the action.\n" +
-                        "Calculate volume of cylinder Press 1.\n" +
-                        "Calculate area of cylinder Press 2.\n" +
-                        "Exit press any button"
-        );
-
+        Volume volume = new Volume();
         Scanner sc = new Scanner(System.in);
-        int action = sc.nextInt();
 
-        if (action != 1 && action != 2) System.out.println("Bye - bye");
-        else {
-            System.out.println("Enter radius:");
-            double radius = sc.nextDouble();
-            System.out.println("Enter height:");
-            double height = sc.nextDouble();
+        boolean exit = false;
 
-            Volume volume = new Volume();
+        while (!exit) {
+            System.out.println(
+                    "Choose the action.\n" +
+                            "Calculate volume of cylinder Press 1.\n" +
+                            "Calculate area of cylinder Press 2.\n" +
+                            "Exit press any button"
+            );
 
-            if (action == 1){
-                double result = volume.volumeOfCylinder(radius, height);
-                System.out.println(result);
-            }
-            else {
-                double result = volume.areaOfCylinder(radius, height);
+            int action = sc.nextInt();
+            if (action != 1 && action != 2) {
+                System.out.println("Bye - bye");
+                exit = true;
+            } else {
+                System.out.println("Enter radius:");
+                double radius = sc.nextDouble();
+                System.out.println("Enter height:");
+                double height = sc.nextDouble();
+                double result;
+                if (action == 1) {
+                    result = volume.volumeOfCylinder(radius, height);
+                } else {
+                    result = volume.areaOfCylinder(radius, height);
+                }
                 System.out.println(result);
             }
         }
