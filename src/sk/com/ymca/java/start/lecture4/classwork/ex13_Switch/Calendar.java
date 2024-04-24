@@ -7,8 +7,9 @@ public class Calendar {
     public static void main(String[] args) {
         // Проливання
         Scanner sc = new Scanner(System.in);
+        boolean exit = false;
 
-        for (int i = 0; i < 8; i++) {
+        while (!exit) {
             System.out.println("Enter the day of the week number: 1,2,3,4,5,6,7: ");
             int input = sc.nextInt();
 
@@ -18,14 +19,21 @@ public class Calendar {
                 case 3:
                 case 4:
                 case 5:
-                    System.out.println("Today is a working day" + ITaskConstants.NEW_LINE + ITaskConstants.DELIMITER);
+                    System.out.println(
+                            "Today is a working day"
+                                    + ITaskConstants.NEW_LINE + ITaskConstants.DELIMITER
+                    );
                     break;
                 case 6:
                 case 7:
-                    System.out.println("Finally today is a day off" + ITaskConstants.NEW_LINE + ITaskConstants.DELIMITER);
+                    System.out.println(
+                            "Finally today is a day off"
+                                    + ITaskConstants.NEW_LINE + ITaskConstants.DELIMITER
+                    );
                     break;
                 default:
-                    System.out.println(ITaskConstants.IColors.RED + "This number the day of the week doesn't exist!");
+                    System.out.println("Bye - bye.");
+                    exit = true;
             }
         }
 

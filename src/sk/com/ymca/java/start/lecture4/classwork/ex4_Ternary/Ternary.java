@@ -15,12 +15,12 @@ public class Ternary {
 
     public static void main(String[] args) {
 
-        int a = 10;
-        int b = 10;
+        int a = 1;
+        int b = 2;
         int max = 0;
 
         // За допомоги тернароного оператора визначаємо найбільше значення в 2-ох змінних і пресвоюємо результат і змінну max
-
+//
 //        if (a > b){
 //            max = a;
 //        }else {
@@ -28,7 +28,7 @@ public class Ternary {
 //        }
 //        System.out.println("Max value = " + max);
 
-        max = (a <= b) ? a : b;
+        max = (a > b) ? a : b;
         System.out.println("Max value = " + max);
 
     }

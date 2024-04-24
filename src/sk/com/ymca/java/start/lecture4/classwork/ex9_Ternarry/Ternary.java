@@ -3,13 +3,13 @@ package sk.com.ymca.java.start.lecture4.classwork.ex9_Ternarry;
 public class Ternary {
 
     public static void main(String[] args) {
-        double quantity = 10;     // Кількість товару
+        double quantity = 9;     // Кількість товару
         double price = 100;       // Ціна
         double discount = 0.75;   // Знижка
-        double cost;              // Загальна вартість
+        double total;              // Загальна вартість
 
-        cost = (quantity >= 10) ? quantity * price * discount : quantity * price;
+        total = (quantity >= 10) ? quantity * price * discount : quantity * price;
 
-        System.out.println("Your cost = " + cost + " $");
+        System.out.println("Your total = " + total + " $");
     }
 }

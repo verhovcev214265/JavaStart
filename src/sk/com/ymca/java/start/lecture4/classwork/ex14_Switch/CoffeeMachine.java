@@ -11,7 +11,6 @@ public class CoffeeMachine {
                 "Espresso, press - 1" + "\n" + "Americano, press - 2" + "\n" + "Latte press - 3");
 
         int input = sc.nextInt();
-
         double cost = 0;
 
         switch (input) {
@@ -26,12 +25,16 @@ public class CoffeeMachine {
                 break;
 
             default:
-                System.out.println(ITaskConstants.IColors.RED + "Wrong choice, please enter 1, 2 or 3!");
+                System.out.println(
+                        ITaskConstants.IColors.RED + "Wrong choice, please enter 1, 2 or 3!"
+                );
         }
 
         if (cost != 0) {
-            System.out.println("Cost = " + cost + "€" + ITaskConstants.NEW_LINE + ITaskConstants.DELIMITER);
+            System.out.println(
+                    "Cost = " + cost + "€" + ITaskConstants.NEW_LINE + ITaskConstants.DELIMITER
+            );
         }
 
-    }
+     }
 }

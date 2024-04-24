@@ -6,7 +6,7 @@ public class Ternary {
 
     public static void main(String[] args) {
 
-        int x = -10, y = -5;
+        int x = -10, y = -5, q = 9;
         String quadrant0, quadrant1, quadrant2;
 
         // Не рекомендовано вкладати  тернарні оператори так як це погіршує читабельність коду.
@@ -27,7 +27,9 @@ public class Ternary {
             }
         }
 
-        quadrant1 = (x > 0) ? ((y > 0) ? "I quadrant" : "IV quadrant") : ((y > 0) ? "II quadrant" : "III quadrant");
+        quadrant1 =
+                (x > 0) ? ((y > 0) ? "I quadrant" : "IV quadrant")
+                        : ((y < 0) ? "II quadrant" : "III quadrant");
 
         quadrant2 = x > 0 ? y > 0 ? "I quadrant" : "IV quadrant" : y > 0 ? "II quadrant" : "III quadrant";
 

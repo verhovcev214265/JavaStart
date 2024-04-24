@@ -1,6 +1,7 @@
 package sk.com.ymca.java.start.lecture4.classwork.ex11_Switch;
 
 import sk.com.ymca.java.start.lecture1.classwork.ITaskConstants;
+
 import java.util.Scanner;
 
 public class Switch {
@@ -9,42 +10,36 @@ public class Switch {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter a or b, ONLY! ");
 
-        final String a = "10";
-        final String b = "20";
-
         String input = scan.next();
 
         /*
-         Створюємо конструкцію багатозначного вибору, перемикач switch, якому в якості селекторного-виразу передаємо
-         змінну input.
+         Створюємо конструкцію багатозначного вибору, перемикач switch-case,
+         якому в якості селекторного-виразу передаємо змінну input.
          */
 
-        switch (input){
+        switch (input) {
             /*
-            В тілі перемикача створбємо 2-а оператора (case) з постійними виразами (a та b)
-            Якщо значення селекторного-виразу (в даному випадку input) співпаде з постійним виразом одного з (case)
-            тоді виконується дія в тілі цього (case-у)
+            В тілі перемикача створюємо 2-а оператори (case) з постійними виразами (1 та 2)
+            Якщо значення селекторного-виразу (в даному випадку input)
+            співпаде з постійним виразом одного з (case)
+            тоді виконується дія в тілі цього (case).
              */
-            case "a": {
-                System.out.println("Your letter is: a");
+            case "1": {
+                System.out.println("Your letter is: one");
                 break;
             }
-            case "b": {
-                System.out.println("Your letter is: b");
+            case "2": {
+                System.out.println("Your letter is: two");
                 break;
             }
-
-            case a:{
-                System.out.println(a);
-                break;
-            }
-            case b:{
-                System.out.println(b);
-                break;
-            }
-            // В будь-якому іншому випадку відпрацює блок default (блок default не є обов'язковим)
+            /*
+             В будь-якому іншому випадку, відпрацює блок default.
+             (блок default не є обов'язковим).
+             */
             default: {
-                System.out.println("You entered: " + ITaskConstants.IColors.RED + "incorrect symbol!");
+                System.out.println(
+                        "You entered: " + ITaskConstants.IColors.RED + "incorrect symbol!"
+                );
             }
         }
         // Порівнюємо з блоком if...else
@@ -53,7 +48,9 @@ public class Switch {
 //        }else if (input.equals("b")){
 //            System.out.println("Your letter is: b");
 //        }else {
-//            System.out.println("You entered: " + ITaskConstants.IColors.RED + "incorrect symbol!");
+//            System.out.println(
+//            "You entered: " + ITaskConstants.IColors.RED + "incorrect symbol!"
+//            );
 //        }
     }
 }

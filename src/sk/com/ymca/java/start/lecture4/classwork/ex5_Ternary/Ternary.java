@@ -14,7 +14,7 @@ public class Ternary {
         max = a > b ? (c = a) : (c = b);
         System.out.println(max + ITaskConstants.NEW_LINE + ITaskConstants.DELIMITER);
 
-        System.out.println(a > b ? (c = a) : (c = b));
+        System.out.println( a > b ? (c = a) : (c = b) );
 
     }
 }

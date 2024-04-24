@@ -8,9 +8,9 @@ public class Authentication {
         String login = "Admin";
         String password = "root";
 
+        System.out.println("Enter your login");
         // Створюємо об'єкт класу Scanner для обробки вводу користувача
         Scanner scan = new Scanner(System.in);
-        System.out.println("Enter your login");
         // Приймаємо ввід користувача
         String userLogin = scan.next();
 
@@ -23,7 +23,7 @@ public class Authentication {
                 System.out.println("Incorrect password");
             }
         }else {
-            System.out.println("There is no user in this login");
+            System.out.println("User with this login doesn't exist.");
         }
     }
 }
