@@ -12,6 +12,7 @@ public class Calendar {
         while (!exit) {
             System.out.println("Enter the day of the week number: 1,2,3,4,5,6,7: ");
             int input = sc.nextInt();
+            int input2 = sc.nextInt();
 
             switch (input) {
                 case 1:

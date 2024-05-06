@@ -5,16 +5,17 @@ import java.util.Scanner;
 public class Authentication {
     public static void main(String[] args) {
 
-        String login = "Admin";
+        String login1 = "Admin";
+        String login2 = "Super Admin";
         String password = "root";
 
-        System.out.println("Enter your login");
+        System.out.println("Enter your login1");
         // Створюємо об'єкт класу Scanner для обробки вводу користувача
         Scanner scan = new Scanner(System.in);
         // Приймаємо ввід користувача
         String userLogin = scan.next();
 
-        if (login.equals(userLogin)){
+        if (login1.equals(userLogin) || login2.equals(userLogin)){
             System.out.println("Enter your password");
             String userPassword = scan.next();
             if (password.equals(userPassword)){
@@ -23,7 +24,7 @@ public class Authentication {
                 System.out.println("Incorrect password");
             }
         }else {
-            System.out.println("User with this login doesn't exist.");
+            System.out.println("User with this login1 doesn't exist.");
         }
     }
 }

@@ -11,14 +11,15 @@ public class IfElseIf {
             System.out.println("Enter your number: ");
             int input = sc.nextInt();
 
-            if (input == 10){
+            if (input == 10) {
                 System.out.println("Input = 10");
-            }else if (input == 5){
+            } else if (input == 5) {
                 System.out.println("Input = 5");
-            }else {
-                System.out.println("Input doesn't equal 5 and 10");
+            } else if (input == 7) {
+                System.out.println("Input = 7");
+            } else {
+                System.out.println("Input doesn't equal 5, 7 and 10");
             }
-
         }
     }
 }

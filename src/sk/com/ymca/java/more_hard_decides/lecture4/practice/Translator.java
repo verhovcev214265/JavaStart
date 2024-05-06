@@ -5,7 +5,7 @@ import sk.com.ymca.java.start.lecture1.classwork.ITaskConstants;
 public class Translator {
 
     public String translate(String word) {
-        String output = null;
+        String output;
         switch (word) {
             case "вітер":
                 output = "wind";

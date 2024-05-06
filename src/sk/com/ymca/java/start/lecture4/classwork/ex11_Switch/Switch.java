@@ -8,7 +8,7 @@ public class Switch {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
-        System.out.println("Enter a or b, ONLY! ");
+        System.out.println("Enter 1, 2 or 3, ONLY! ");
 
         String input = scan.next();
 
@@ -19,7 +19,7 @@ public class Switch {
 
         switch (input) {
             /*
-            В тілі перемикача створюємо 2-а оператори (case) з постійними виразами (1 та 2)
+            В тілі перемикача створюємо 3 - и оператори (case) з постійними виразами (1, 2 та 3)
             Якщо значення селекторного-виразу (в даному випадку input)
             співпаде з постійним виразом одного з (case)
             тоді виконується дія в тілі цього (case).
@@ -30,6 +30,10 @@ public class Switch {
             }
             case "2": {
                 System.out.println("Your letter is: two");
+                break;
+            }
+            case "3": {
+                System.out.println("Your letter is: three");
                 break;
             }
             /*

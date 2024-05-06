@@ -7,8 +7,10 @@ public class CoffeeMachine {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Please chose coffee for yourself:" + "\n" +
-                "Espresso, press - 1" + "\n" + "Americano, press - 2" + "\n" + "Latte press - 3");
+        System.out.println(
+                "Please chose coffee for yourself:" + "\n" +
+                "Espresso, press - 1" + "\n" + "Americano, press - 2" + "\n" + "Latte press - 3"
+        );
 
         int input = sc.nextInt();
         double cost = 0;
