@@ -2,11 +2,10 @@ package sk.com.ymca.java.start.lecture5.practice.task1;
 
 import java.util.Scanner;
 
-public class PowerTwo {
+public class PowerOfTwo_First {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-
         boolean exit = false;
 
         while (!exit) {

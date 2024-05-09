@@ -19,5 +19,7 @@ public class Main {
         double result = Circle.area(radius);
 
         System.out.println("area = "+ result);
+
+        sc.close();
     }
 }

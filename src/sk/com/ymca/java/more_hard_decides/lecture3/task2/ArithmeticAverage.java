@@ -38,5 +38,7 @@ public class ArithmeticAverage {
         System.out.println(
                 "Arithmetic average = " + result
         );
+
+        sc.close();
     }
 }
