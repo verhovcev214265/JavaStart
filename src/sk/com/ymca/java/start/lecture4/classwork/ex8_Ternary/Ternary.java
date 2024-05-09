@@ -11,7 +11,8 @@ public class Ternary {
 
         // Не рекомендовано вкладати  тернарні оператори так як це погіршує читабельність коду.
 
-        quadrant0 = x > 0 ? (y > 0 ? "I quadrant" : "IV quadrant") : (y > 0 ? "II quadrant" : "III quadrant");
+        quadrant0 = x > 0 ? (y > 0 ? "I quadrant" : "IV quadrant") :
+                (y > 0 ? "II quadrant" : "III quadrant");
 
         if (x > 0){
             if (y > 0){

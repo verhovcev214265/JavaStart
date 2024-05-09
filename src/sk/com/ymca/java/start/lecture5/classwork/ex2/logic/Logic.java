@@ -37,7 +37,7 @@ public class Logic {
 
         System.out.println("~" + operand1 + " = " + result + " (NOT)");
 
-        // Change symbol
+        // Change symbol add 1 to negation of a number.
 
         operand1 = 100;                         //   [0000 0001] - Bin
         result = ~operand1;                     //   [1111 1110] - Bin

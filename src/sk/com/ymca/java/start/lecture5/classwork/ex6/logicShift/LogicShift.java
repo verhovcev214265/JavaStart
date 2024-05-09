@@ -14,7 +14,8 @@ public class LogicShift {
         operand = (byte) (operand >> 1);                                // 0000 0010
         System.out.println("After shift to right = " + operand);
 
-        int number = -1 >>> 24;
-        System.out.println(number);
+        // unsigned shift to right (use just with types: 'int' or 'long'
+        int number = -1 >>> 24;                                         // 1111 1111
+        System.out.println("After unsigned shift to right = " + number);
     }
 }
