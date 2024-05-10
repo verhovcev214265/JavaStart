@@ -59,7 +59,8 @@ public class Calculator {
                             System.out.println(operand1 / operand2);
                         } else {
                             System.out.println(
-                                    ITaskConstants.IColors.RED + "It is forbidden to divide by 0" +
+                                    ITaskConstants.IColors.RED +
+                                            "It is forbidden to divide by 0" +
                                             ITaskConstants.IColors.RESET
                             );
                         }

@@ -36,9 +36,11 @@ public class Parity {
 
             if (input != -1) {
                 if ((input & 1) == 0) {
-                    System.out.println("This number is parity" + ITaskConstants.NEW_LINE + ITaskConstants.DELIMITER);
+                    System.out.println("This number is parity" +
+                            ITaskConstants.NEW_LINE + ITaskConstants.DELIMITER);
                 } else {
-                    System.out.println("This number isn't parity" + ITaskConstants.NEW_LINE + ITaskConstants.DELIMITER);
+                    System.out.println("This number isn't parity" +
+                            ITaskConstants.NEW_LINE + ITaskConstants.DELIMITER);
                 }
             } else {
                 exit = true;

@@ -46,8 +46,11 @@ public class Translator {
                     break;
 
                 default:
-                    System.out.println(ITaskConstants.IColors.RED + "The word doesn't exist in this dictionary" +
-                            ITaskConstants.IColors.RESET);
+                    System.out.println(
+                            ITaskConstants.IColors.RED +
+                                    "The word doesn't exist in this dictionary" +
+                            ITaskConstants.IColors.RESET
+                    );
             }
 
         }
