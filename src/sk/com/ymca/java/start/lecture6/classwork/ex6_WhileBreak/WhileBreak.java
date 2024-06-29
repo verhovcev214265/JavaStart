@@ -10,8 +10,6 @@ public class WhileBreak {
             counter++;
 
             if (counter == 4) break;
-
-
         }
     }
 }

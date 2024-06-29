@@ -5,7 +5,6 @@ public class WhileContinue {
 
         int counter = 0;
         while (true) {
-
             counter++;
             if (counter == 3) continue;
             System.out.println(counter + " - iteration");

@@ -5,7 +5,9 @@ import java.util.Scanner;
 public class GuessColor {
     public static void main(String[] args) {
 
-        System.out.println("Guess the intended color in five attempts \nIf you like to go out enter exit");
+        System.out.println(
+                "Guess the intended color in five attempts \nIf you like to go out enter exit"
+        );
 
         final int MAX_ATTEMPT = 5;
         int attempt = 0;
@@ -16,19 +18,18 @@ public class GuessColor {
         while (attempt < MAX_ATTEMPT){
             attempt++;
             System.out.println("Attempt " + attempt + ":");
-            String value = sc.next();
+            String input = sc.next();
 
-            if (value.equals("exit")){
+            if (input.equals("exit")){
                 System.out.println("Bye - bye");
                 break;
-            }else if (!value.equals(color)){
+            }else if (!input.equals(color)){
                 continue;
             }
 
             System.out.println("You are win for " + attempt + " attempt.\nGame over!");
             break;
         }
-
         sc.close();
     }
 

@@ -13,7 +13,6 @@ public class ForInFor {
 
             }
             System.out.println();
-
         }
     }
 

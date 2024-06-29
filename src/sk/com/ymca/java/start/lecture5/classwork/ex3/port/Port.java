@@ -11,9 +11,9 @@ public class Port {
          */
 
         // 0111 0000 - початкове значення порта введення/виведення
-        byte port = 0b111_0000;
+        byte port = 112;
         // 0000 0010 - маска вмикання пристрою яке керується 1-им бітом.
-        byte mask = 0b00_0010;
+        byte mask = 114;
 
         System.out.println("port = " + port + " is off.");
 
@@ -23,7 +23,7 @@ public class Port {
         System.out.println("port = " + port + " is on.");
 
         //How can we put the values in another way
-        mask = 0b1111101;            //Create mask for put off our instrument
+        mask = 112;            //Create mask for put off our instrument
 
         port = (byte) (port & mask); /* Turn off the device controlled by the first bit
                                                 (0111 0010 & 0111 1101 = 0111 0000)

@@ -1,8 +1,12 @@
 package sk.com.ymca.java.more_hard_decides.lecture4.hometasks.task0;
 
 import sk.com.ymca.java.start.lecture1.classwork.ITaskConstants;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class Calculator {
+
+    private static final Logger logger = LoggerFactory.getLogger(Calculator.class);
 
     /*
     Напишіть програму – консольний калькулятор.
@@ -29,15 +33,13 @@ public class Calculator {
                 answer = operandA * operandB;
             case "/":
                 if (operandB == 0) throw new ArithmeticException(
-                        ITaskConstants.IColors.YELLOW +"Devided byzero" + ITaskConstants.IColors.RESET
+                        ITaskConstants.IColors.YELLOW +
+                                "Devided byzero" + ITaskConstants.IColors.RESET
                 );
                 else answer = operandA / operandB;
                 break;
             default:
-                System.out.println(
-                        ITaskConstants.IColors.RED + "You enter incorrect symbol!" +
-                                ITaskConstants.IColors.RESET
-                );
+                logger.info( "You enter incorrect symbol!");
         }
         return answer;
     }

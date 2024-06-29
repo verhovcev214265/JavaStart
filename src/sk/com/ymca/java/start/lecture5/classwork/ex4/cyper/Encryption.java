@@ -7,7 +7,7 @@ public class Encryption {
         Криптостійкість такого ключа, можно збільшити, якщо збільшити його довжину.
     */
     public static void main(String[] args) {
-        short secretKey = 0b0101;  // Secret key (5 dec)
+        short secretKey = 5;  // Secret key (0b0101 bin)
         char character = 'A';      // Вихідний символ для шифрування.
 
         System.out.println(
@@ -23,10 +23,10 @@ public class Encryption {
         );
 
         // Розшифровуємо символ. character = 0100 0100 (68)
-        character = (char) (character ^ secretKey); // 0100 0100 ^ 0000 0101 = 0000 0101
+        character = (char) (character ^ secretKey); // 0100 0100 ^ 0000 0101 = 0100 0001
+
         System.out.println("Розшифрований символ: " + character +
                 ", його код у кодовій таблиці: " + (byte) character
         );
-
     }
 }

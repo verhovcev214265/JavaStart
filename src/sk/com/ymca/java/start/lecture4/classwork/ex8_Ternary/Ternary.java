@@ -28,9 +28,7 @@ public class Ternary {
             }
         }
 
-        quadrant1 =
-                (x > 0) ? ((y > 0) ? "I quadrant" : "IV quadrant")
-                        : ((y < 0) ? "II quadrant" : "III quadrant");
+        quadrant1 = (x > 0) ? ((y > 0) ? "I quadrant" : "IV quadrant") : ((y < 0) ? "II quadrant" : "III quadrant");
 
         quadrant2 = x > 0 ? y > 0 ? "I quadrant" : "IV quadrant" : y > 0 ? "II quadrant" : "III quadrant";
 
